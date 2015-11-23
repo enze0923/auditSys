@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
+        let vc = LoginViewController()
+        let navi = UINavigationController(rootViewController: vc)
+        
+        navi.navigationBar.setBackgroundImage(UIImage(named: "arrow"), forBarMetrics: .Default)
+        let dict = [NSForegroundColorAttributeName:UIColor.redColor()]
+        navi.navigationBar.titleTextAttributes = dict;
+        navi.navigationBar.tintColor = UIColor.whiteColor()
+        
+        self.window?.rootViewController = navi
+        self.window?.makeKeyAndVisible()
+        
+        
         return true
     }
 

@@ -1,19 +1,29 @@
 PODS:
   - Alamofire (3.1.1)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
   - Kingfisher (1.8.1)
   - MBProgressHUD (0.9.1)
+  - MJRefresh (3.0.4)
   - SnapKit (0.18.0)
 
 DEPENDENCIES:
   - Alamofire (= 3.1.1)
+  - FMDB (= 2.5)
   - Kingfisher (= 1.8.1)
   - MBProgressHUD (= 0.9.1)
+  - MJRefresh (= 3.0.4)
   - SnapKit (= 0.18.0)
 
 SPEC CHECKSUMS:
   Alamofire: 9b0a7188b961a03914a99304488bd226b0e46c0e
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   Kingfisher: a20680f220c52620284fae571805a179809985c2
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MJRefresh: c95f0d541606ef584dab3fbeda28f4f32b4aca6e
   SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
 
 COCOAPODS: 0.39.0

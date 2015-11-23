@@ -85,13 +85,17 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-audit/Alamofire.framework"
+  install_framework "Pods-audit/FMDB.framework"
   install_framework "Pods-audit/Kingfisher.framework"
   install_framework "Pods-audit/MBProgressHUD.framework"
+  install_framework "Pods-audit/MJRefresh.framework"
   install_framework "Pods-audit/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-audit/Alamofire.framework"
+  install_framework "Pods-audit/FMDB.framework"
   install_framework "Pods-audit/Kingfisher.framework"
   install_framework "Pods-audit/MBProgressHUD.framework"
+  install_framework "Pods-audit/MJRefresh.framework"
   install_framework "Pods-audit/SnapKit.framework"
 fi
